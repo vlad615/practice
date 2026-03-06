@@ -10,6 +10,11 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    body{
+        font-family: "Poppins", sans-serif;
+        
+    }
+
     a{
         text-decoration: none;
     }
