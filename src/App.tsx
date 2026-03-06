@@ -1,40 +1,46 @@
-import './App.css';
 import styled from 'styled-components';
+import { Title } from './components/Title.styled';
+import { Form, Field } from './components/Form.styled';
+import { StyledBtn } from './components/Button.styled';
 
 
 function App() {
-    return (
-        <div className="App">
-            <Title>Styled-components <span>.attrs</span> method</Title>
+    return (<>
+            <Box>
+                <StyledBtn color="#7f25f5">Старт</StyledBtn>
+                <StyledBtn fontSize='2rem' outlined>Стоп</StyledBtn>
+                <StyledBtn primary>Занаво</StyledBtn>
+            </Box>
+            <Box>
+                <Title>Styled-components <span>.attrs</span> method</Title>
 
-            <Form>
-                <Field/>
-                <Field/>
-                <Field/>
-            </Form>
-        </div>
+                <Form>
+                    <Field/>
+                    <Field/>
+                    <Field/>
+                </Form>
+            </Box>
+        </>
+        
     );
 }
 
+const Box = styled.div`
+    height: 100% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    button {
+        cursor: pointer;
+    }
+`
+
 export default App;
 
-const Title = styled.h1`
-    font-size: 1.5em;
-    text-align: center;
-    margin-bottom: 32px;
-    span {
-        color: #e91e63;
-    }
-`;
 
-const Form = styled.form`
-  width: 100%;
-  max-width: 500px;
-`;
 
-const Field = styled.input`
-  padding: 5px 15px;
-  margin: 10px 0;
-  width: 100%;
-  font-size: 1rem;
-`;
+
+
+
