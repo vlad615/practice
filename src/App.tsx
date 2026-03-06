@@ -1,15 +1,14 @@
 import styled from 'styled-components';
 import { Title } from './components/Title.styled';
 import { Form, Field } from './components/Form.styled';
-import { StyledBtn } from './components/Button.styled';
-
+import { StyledBtn, SuperBtn, Link } from './components/Button.styled';
 
 function App() {
     return (<>
             <Box>
-                <StyledBtn color="#7f25f5">Старт</StyledBtn>
+                <SuperBtn color="#7f25f5">Старт</SuperBtn>
                 <StyledBtn fontSize='2rem' outlined>Стоп</StyledBtn>
-                <StyledBtn primary>Занаво</StyledBtn>
+                <SuperBtn as={Link} href='https://google.com' primary>Go to</SuperBtn>
             </Box>
             <Box>
                 <Title>Styled-components <span>.attrs</span> method</Title>
@@ -32,8 +31,8 @@ const Box = styled.div`
     align-items: center;
     gap: 20px;
 
-    button {
-        cursor: pointer;
+    @media screen and (max-width: 800px) {
+        flex-direction: column;
     }
 `
 
