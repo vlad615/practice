@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
 
     body{
         font-family: "Poppins", sans-serif;
-        
+        background-color: #5959595b
     }
 
     a{
@@ -20,6 +20,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     button{
+        
         border: none;
         cursor: pointer;
     }

@@ -1,40 +1,33 @@
 import styled from 'styled-components';
 import { Header } from './layout/header/Header';
-import { Title } from './components/Title.styled';
-import { Form, Field } from './components/Form.styled';
-import { StyledBtn, SuperBtn, Link } from './components/Button.styled';
+import { Card } from './components/Card';
+import { StyledWrapper } from './components/Wrapper';
+import image from "./components/accets/Rectangle 1.png"
+
 
 function App() {
     return (<>
-        <Header />
-        <Box>
-            <SuperBtn color="#7f25f5">Старт</SuperBtn>
-            <StyledBtn fontSize='2rem' outlined>Стоп</StyledBtn>
-            <SuperBtn as={Link} href='https://google.com' primary>Go to</SuperBtn>
-        </Box>
-        <Box>
-            <Title>Styled-components <span>.attrs</span> method</Title>
-
-            <Form>
-                <Field/>
-                <Field/>
-                <Field/>
-            </Form>
-        </Box>
+        {/* <Header /> */}
+        <Wrapper wrap='wrap' gap='20px' margin='0 auto' maxWidth='1440px' padding='15px'>
+            <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
+            <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
+            <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
+            <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
+            <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
+            <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
+            <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
+            <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
+            <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
+        </Wrapper>
         </>
         
     );
 }
 
-const Box = styled.div`
-    height: 100% ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    @media screen and (max-width: 800px) {
-        flex-direction: column;
+const Wrapper = styled(StyledWrapper)`
+    @media screen and (max-width: 576px){
+        justify-content: center;
+        align-items: center;
     }
 `
 
