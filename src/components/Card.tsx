@@ -11,7 +11,7 @@ type CardProps = {
 
 export const Card = (props: CardProps) => {
     return(
-        <StyledCard direction="column" padding="10px" gap="10px" maxWidth="calc(100% / 5 - 20px)">
+        <StyledCard direction="column" padding="10px" gap="10px" maxwidth="calc(100% / 5 - 20px)">
             <StyledImage src={props.img} alt="desirt"/>
             <StyledH2>{props.title}</StyledH2>
             <StyledP color="#abb3ba">{props.description.length > 81? `${props.description.slice(0, 81)}...` : props.description}</StyledP>

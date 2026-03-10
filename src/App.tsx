@@ -8,7 +8,7 @@ import image from "./components/accets/Rectangle 1.png"
 function App() {
     return (<>
         {/* <Header /> */}
-        <Wrapper wrap='wrap' gap='20px' margin='0 auto' maxWidth='1440px' padding='15px'>
+        <Wrapper wrap='wrap' gap='20px' margin='0 auto' maxwidth='1440px' padding='15px'>
             <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
             <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>
             <Card img={image} title="Headline" description='Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.'/>

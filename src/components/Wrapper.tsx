@@ -9,12 +9,12 @@ type FlexWrapperProps = {
     gap?: string;
     padding?: string;
     margin?: string;
-    maxWidth?: string;
+    maxwidth?: string;
 }
 
 export const StyledWrapper = styled.div<FlexWrapperProps>`
     display: flex;
-    max-width: ${props => props.maxWidth || "none"};
+    max-width: ${props => props.maxwidth || "none"};
     flex-direction: ${props => props.direction || "row"};
     justify-content: ${props => props.justify || "flex-start"};
     align-items: ${props => props.align || "stretch"};
